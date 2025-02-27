@@ -1,0 +1,13 @@
+{% extends "tweet/layout.html" %}
+
+{% block content %}
+
+<h2>Register form</h2>
+<form method="post">
+    {% csrf_token %}
+    {{form}}
+    <button class="btn btn-primary" type="submit">Register</button>
+
+</form>
+
+{% endblock  %}
